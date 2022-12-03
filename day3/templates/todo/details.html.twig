@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %} {% block body %}
+<h1>{{todo.name}}</h1>
+<p>{{ todo.description }}</p>
+<p>{{ todo.priority }}</p>
+<p>{{ todo.category }}</p>
+<p>{{ status.name }}</p>
+<p>{{ todo.date|date("d.m.Y g:i") }}</p>
+<p>{{ todo.startDate|date() }}</p>
+{% endblock %}
